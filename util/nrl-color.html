@@ -1,0 +1,39 @@
+<!-- *********************************************
+    Value node
+     ********************************************* -->
+<script type="text/x-red" data-template-name="nrl-color in">
+    <div class="form-row">
+        <label for="node-input-color"><i class="fa fa-paint-brush"></i> Color</label>
+        <input type="text" class="jscolor {hash:true}" id="node-input-color" placeholder="#ffffff">
+
+    </div>
+</script>
+<script type="text/x-red" data-help-name="nrl-color in">
+    <p>Used to modify the <b>value</b> of the switch. I.e. if a switch should be dimmed. 0-100 are valid values</p>
+</script>
+<script type="text/javascript">
+    /* when opening the form */
+    function oneditprepareDatasource() {
+      $.getScript('/norelite/color/jscolor.js').done(function(){
+        jscolor.installByClassName("jscolor");
+      });
+    }
+    RED.nodes.registerType('nrl-color in', {
+        category: 'norelite_util-input',
+        color: "#FFCC66",
+        defaults: {
+            color: {value: '#FFFFFF', required:true}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "fa-color-o.png",
+        //align: "left",
+        label: function() {
+            return "Set to " + this.color;
+        },
+        oneditprepare: oneditprepareDatasource,
+        oneditsave: function(){
+        }
+    });
+</script>
+

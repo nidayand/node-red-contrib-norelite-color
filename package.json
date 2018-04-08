@@ -1,0 +1,28 @@
+{
+  "name": "node-red-contrib-norelite-color",
+  "version": "1.0.0",
+  "description": "Utility add-on to node-red-contrib-norelite to change colors",
+  "author": {
+    "name": "nidayand",
+    "email": "pggithub@gothager.se"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nidayand/node-red-contrib-norelite-color.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "home",
+    "automation",
+    "norelite",
+    "color"
+  ],
+  "node-red": {
+    "nodes": {
+      "nrl-color in": "util/nrl-color.js"
+    }
+  }
+}
