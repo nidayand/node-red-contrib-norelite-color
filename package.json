@@ -1,13 +1,12 @@
 {
   "name": "node-red-contrib-norelite-color",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Utility add-on to node-red-contrib-norelite to change colors",
   "author": {
     "name": "nidayand",
     "email": "pggithub@gothager.se"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/nidayand/node-red-contrib-norelite-color.git"
