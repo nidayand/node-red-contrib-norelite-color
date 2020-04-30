@@ -9,7 +9,23 @@
     </div>
 </script>
 <script type="text/x-red" data-help-name="nrl-color in">
-    <p>Used to change the color, msg.payload.color, of a message. It is to be used with node-red-contrib-norelite nodes.</p>
+    <p>Helper node to modify the color value in HEX format</p>
+    <h3>Input</h3>
+    <dl class="message-properties">
+    <dt>payload&nbsp;<span class="property-type">object</span></dt>
+    <dd>Norelite message format. See References</dd>
+    </dl>
+    <h3>Output</h3>
+    <dl class="message-properties">
+    <dt>payload&nbsp;<span class="property-type">object</span></dt>
+    <dd>Norelite message format</dd>
+    </dl>
+    <h3>Details</h3>
+    <p>Updates the <code>msg.payload.color</code> value with configuration. Simply enter the new value or use the color picker to select the color of choice.</p>
+    <h3>References</h3>
+    <ul>
+    <li><a href="https://www.npmjs.com/package/node-red-contrib-norelite">Norelite</a></li>
+    </ul>
 </script>
 <script type="text/javascript">
     /* when opening the form */
